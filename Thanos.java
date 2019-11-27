@@ -42,10 +42,10 @@ public class Thanos {
 
 		// TODO 5 : Keep only the half of the list
 
-		List<Hero> halfHeroes =  heroes.subList(0, heroes.size() / 2);
+		heroes = new ArrayList<Hero>(heroes.subList(0, heroes.size()/2));
 
 		// TODO 6 : Loop throught the list and display the name of the remaining heroes
-		ausgabeHeroes(halfHeroes);
+		ausgabeHeroes(heroes);
 	}
 
 	public static void ausgabeHeroes(List<Hero> heroes) {
